@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    // Input
+    long long n, m, a;
+    std::cin >> n >> m >> a;
+
+    // Calculate the number of flagstones needed along the length
+    long long lengthFlagstones = (n + a - 1) / a;
+
+    // Calculate the number of flagstones needed along the width
+    long long widthFlagstones = (m + a - 1) / a;
+
+    // Calculate the total number of flagstones needed
+    long long totalFlagstones = lengthFlagstones * widthFlagstones;
+
+    // Output the result
+    std::cout << totalFlagstones << std::endl;
+
+    return 0;
+}
